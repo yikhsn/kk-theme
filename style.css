@@ -1,0 +1,621 @@
+:root{
+  --light-primary-color: #9fecbf;
+  --main-primary-color: #67e099;
+  --dark-primary-color: #2ed573;
+  --bold-primary-color: #26bb64;
+
+
+  --light-bg-color: #fbfcfd;
+  --main-bg-color: #f1f2f6;
+  --dark-bg-color: #e7e8ef;
+
+  --bright-secondary-color: #7f8c8d;
+  --light-secondary-color: #667273;
+  --main-secondary-color: #464e4f;
+  --dark-secondary-color: #363c3d;
+}
+
+/*========================== REUSABLE COMPONENTS ==========================*/
+/*=========================================================================*/
+
+.btn-main-theme {
+  background: var(--main-primary-color);
+  color: var(--main-secondary-color);
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-main-theme:hover {
+  background: var(--dark-primary-color);
+  color: var(--dark-secondary-color);
+}
+
+.form-comment-theme:hover, 
+.form-comment-theme:focus {
+  border: 1px solid var(--main-primary-color);
+}
+
+.form-comment-theme::placeholder {
+  font-size: 13px;
+  color: var(--light-secondary-color);
+}
+
+/*========================= RESET CSS & BOOTSTRAP =========================*/
+/*=========================================================================*/
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark-primary-color);
+}
+
+a:hover {
+  color: var(--bold-primary-color);
+  text-decoration: none;
+}
+
+input:focus, textarea:focus {
+  box-shadow: none !important;
+}
+
+/*============================ STYLE FOR NAVBAR ===========================*/
+/*=========================================================================*/
+
+nav {
+  margin-bottom: 30px;
+}
+
+#main-navbar {
+  height: 60px;
+  padding: 5px 50px 5px 100px;
+  background: #fff;
+  border-bottom: 1px solid var(--main-bg-color);
+}
+
+.cody-title {
+  color: var(--dark-primary-color);
+  font-size: 22px;
+}
+
+.cody-title:hover {
+  color: var(--bold-primary-color);
+}
+
+.nav-item {
+  padding: 5px;
+}
+
+.nav-item:first-child{
+  margin-left: 30px;
+}
+
+.cody-menu {
+  color: var(--light-secondary-color);
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.cody-menu:hover {
+  color: var(--main-secondary-color);
+}
+
+.cody-input-search {
+  width: 200px;
+  height: 20px;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  color: var(--light-secondary-color);
+  background: transparent;
+  border-bottom: 1px solid var(--light-primary-color);
+}
+
+.cody-input-search::placeholder {
+  font-size: 12px;
+}
+.cody-input-search::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-size: 12px;
+}
+.cody-input-search::-moz-placeholder { /* Firefox 19+ */
+  font-size: 12px;
+
+}
+.cody-input-search:-ms-input-placeholder { /* IE 10+ */
+  font-size: 12px;
+}
+.cody-input-search:-moz-placeholder { /* Firefox 18- */
+  font-size: 12px;
+}
+
+/*============================ STYLE FOR BODY ===========================*/
+/*=======================================================================*/
+
+.body-cody {
+  margin: 20px 75px 30px 75px;
+}
+
+.body-content {
+  margin-right: 40px;
+  margin-left: 10px; 
+}
+
+
+/*========================== STYLE FOR CONTENT ==========================*/
+/*=======================================================================*/
+
+.single-posts {
+  font-size: 20px;
+  margin-bottom: 30px;
+  /* background: blue; */
+}
+
+.single-posts:last-child {
+  margin-bottom: 0;
+}
+
+.post-thumbnail {
+  margin-right: 10px;
+  height: 200px;
+  width: 350px;
+  overflow: hidden;
+}
+
+.image-thumbnail {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #464e4f;
+  opacity: 0.5;
+}
+
+/* .image-thumbnail-overlay {
+  position: relative;
+}
+
+.image-thumbnail-overlay::after{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.image-thumbnail-overlay::hover::after {
+  opacity: .5;
+  background-color: red;
+} */
+
+.post-content {
+  padding: 5px;
+  /* margin-left: 5px; */
+}
+
+.title-post {
+  font-size: 110%;
+  font-weight: 600;
+  line-height: 1.25;
+  word-spacing: 1px;
+  margin-bottom: 20px;
+  font-family: 'PT Serif', serif;
+
+}
+
+.title-post a {
+  color: var(--dark-secondary-color);
+}
+
+.desc-post {
+  font-size: 65%;
+  line-height: 1.5;
+  font-weight: 500;
+  color: var(--main-secondary-color);
+  margin-bottom: 20px;
+}
+
+.meta-post {
+  font-size: 55%;
+}
+
+.meta-post-author {
+  display: inline-block;
+  margin-right: 3px;
+}
+
+.meta-post-author a {
+  color: var(--main-secondary-color);
+}
+
+.meta-post-time {
+  display: inline-block;
+  margin-left: 3px;
+  color: var(--main-secondary-color);
+}
+
+.meta-post-operator {
+  font-size: 40%;
+  display: inline-block;
+  color: var(--light-secondary-color);
+}
+
+/*========================= STYLE FOR PAGE CONTENT ========================*/
+/*=========================================================================*/
+
+
+/*========================== STYLE FOR SINGLE PAGE ========================*/
+/*=========================================================================*/
+
+
+/*========================== STYLE FOR SINGLE CONTENT =====================*/
+
+.single-page {
+  margin-right: 70px; 
+  font-size: 25px;
+}
+
+.title-single-page {
+  font-size: 150%;
+  font-weight: 600;
+  /* padding-left: 30px;
+  padding-right: 30px;  */
+  margin-bottom: 20px;
+  color: var(--dark-secondary-color);
+  font-family: 'PT Serif', serif;
+}
+
+.category-single-page {
+  font-size: 20px;
+}
+
+.single-page-thumbnail {
+  margin-bottom: 20px;
+}
+
+.single-page-thumbnail img {
+  width: 100%;
+  height: auto;
+}
+
+.paragraph-single-page {
+  padding: 20px 70px 0 70px;
+  margin-bottom: 10px;
+  word-spacing: 1px;
+  line-height: 2;
+}
+
+.paragraph-single-page img {
+  width: 100%;
+  height: auto;
+}
+
+.paragraph-single-page table {
+  font-size: 65%;
+}
+
+.paragraph-single-page p {
+  font-size: 65%;
+  color: var(--dark-secondary-color);
+}
+
+.paragraph-single-page h1,
+.paragraph-single-page h2,
+.paragraph-single-page h3,
+.paragraph-single-page h4,
+.paragraph-single-page h5,
+.paragraph-single-page h6 {
+  margin-top: 15px;
+}
+
+.paragraph-single-page h1,
+.paragraph-single-page h2 {
+  font-size: 100%;
+  margin-bottom: 20px;
+  font-family: 'PT Serif', serif;
+  font-weight: 600;
+  color: var(--dark-secondary-color);
+}
+
+.paragraph-single-page h3 {
+  font-size: 80%;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-family: 'PT Serif', serif;
+  color: var(--dark-secondary-color);
+}
+
+.paragraph-single-page h4,
+.paragraph-single-page h5,
+.paragraph-single-page h6 {
+  font-size: 60%;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-family: 'PT Serif', serif;
+  color: var(--dark-secondary-color);
+}
+
+.paragraph-single-page ul li,
+.paragraph-single-page ol li {
+  font-size: 65%;
+  margin-left: 50px;
+  color: var(--dark-secondary-color);
+}
+
+.paragraph-single-page .wp-caption-text {
+  font-family: 'PT Serif', serif;
+  text-align: center;
+  font-size: 50%;
+  color: var(--main-secondary-color);
+}
+
+.paragraph-single-page code, .paragraph-single-page pre {
+  color: var(--main-primary-color);
+  font-size: 65%;
+  background: var(--main-secondary-color);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.single-page-tags {
+  font-size: 60%;
+  margin-bottom: 20px;
+}
+
+.single-tags-post {
+  display: inline-block;
+  font-size: 80%;
+  margin-right: 3px;
+  margin-bottom: 5px;
+  padding: 3px 8px 3px 8px;
+  border-radius: 5px;
+  color: #fff;
+  background: var(--main-primary-color);
+  transition: background 0.5s ease-in;
+}
+
+.single-tags-post:hover,
+.single-tags-post:visited {
+  background: var(--dark-primary-color);
+}
+
+/*====================== STYLE FOR SINGLE AUTHOR BOX ===================*/
+
+.single-page-author-post{
+  padding: 20px;
+  margin-bottom: 20px;
+  background: var(--main-bg-color);
+}
+
+.author-post-avatar {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.author-post-avatar .avatar {
+  width: 80px;
+  height: auto;
+  border-radius: 45px;
+}
+
+.author-post-meta {
+  display: inline;
+}
+
+.author-post-name {
+  display: inline;
+  font-size: 80%;
+}
+
+.author-post-link {
+  display: inline;
+  font-size: 50%;
+}
+
+.author-post-link a{
+  color: var(--bright-secondary-color);
+}
+
+.author-post-desc {
+  margin-top: 10px;
+  display: block;
+  font-size: 55%;
+  color: var(--light-secondary-color);
+}
+
+.author-post-desc a {
+  color: var(--light-secondary-color);
+}
+
+.author-socials {
+  display: block;
+  margin-top: 18px;
+  margin-bottom: 10px;
+  font-size: 60%;
+}
+
+.author-social {
+  border: 1px solid var(--light-secondary-color);
+  padding: 1px 5px 3px 5px;
+  border-radius: 5px;
+  text-align: center;
+  justify-items: center;
+  display: inline-block;
+  margin-right: 5px;
+  width: 30px;
+  height: auto;
+  opacity: 0.5;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.author-social:hover, .author-social:visited {
+  background-color: #fff;
+  border: 1px solid var(--main-secondary-color);
+  opacity: 0.8; 
+}
+
+.author-social path {
+  fill: red;
+  background-color: red;
+}
+
+/*===================== STYLE FOR SINGLE COMMENTS SYSTEM ==================*/
+
+#comments {
+  margin-bottom: 20px;
+}
+
+#comments ul li, .comments ol li {
+  list-style: none;
+  text-decoration: none;
+}
+
+/* .comment {
+
+} */
+
+.comments-title {
+  color: var(--dark-secondary-color);
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.comment-list{
+  padding: 0 20px;
+  color: var(--light-secondary-color);
+  margin-bottom: 50px;
+}
+
+.comment-body {
+  display: block;
+  color: var(--light-secondary-color);
+  padding: 10px 10px 0 10px;
+  margin-bottom: 30px;
+  background: white;
+}
+
+.comment-author-avatar {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  height: auto;
+}
+
+.comment-author-avatar img {
+  width: 60px;
+  height: auto;
+  border-radius: 50px;
+}
+
+.comment-content {
+  width: 100%;
+  display: inline;
+  /* background: blue; */
+}
+
+.comment-author-name {
+  display: inline;
+  font-size: 45%;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.comment-meta {
+  display: inline;
+  font-size: 11px;
+  margin-bottom: 5px;
+}
+
+.comment-text {
+  display: block;
+  font-size: 55%;
+}
+
+.comment-notes {
+  font-size: 14px;
+  color: var(--light-secondary-color);
+}
+
+.reply {
+  background: var(--main-primary-color);
+  float: right;
+  padding: 2px 5px;
+  border-radius: 5px;
+  font-size: 40%;
+  font-weight:  600;
+  transition: all 0.5s ease;
+}
+
+.reply:hover {
+  background: var(--dark-primary-color);
+}
+
+.reply a {
+  color: var(--light-secondary-color);
+  transition: all 0.5s ease;
+}
+
+.reply:hover a {
+  color: var(--main-secondary-color);
+}
+
+.parent .children {
+  margin-left: 40px;
+}
+
+
+/**** COMMENTS FORM ****/
+
+.comment-form .logged-in-as {
+  color: var(--main-secondary-color);
+  font-size: 65%;
+}
+
+.comment-form .logged-in-as a {
+  color: var(--main-secondary-color);
+}
+
+.comment-form .logged-in-as a:last-child {
+  color: var(--main-primary-color);
+}
+
+.comment-form-title {
+  font-size: 100%;
+  color: var(--dark-secondary-color);
+}
+
+.comment-notes {
+  font-size: 50%;
+}
+
+/*=========================== STYLE FOR FOOTER ============================*/
+/*=========================================================================*/
+
+.footer-blog {
+  background: var(--light-bg-color);
+  border-top: 1px solid var(--dark-bg-color);
+  height: 40px;
+}
+
+.footer-copyright {
+  padding: 10px;
+  color: var(--bright-secondary-color);
+  font-size: 16px;
+}
+
+
+
+/*================== WORDPRESS SPECIFIC SELECTOR STYLE ====================*/
+/*=========================================================================*/
+
+img.attachment-medium {
+  height: 200px;
+  width: 350px;
+}
