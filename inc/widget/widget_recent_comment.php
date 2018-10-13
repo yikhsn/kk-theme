@@ -21,8 +21,8 @@
     //front-end display of widget
     public function widget( $args, $instace) {
     ?>
-      <div id="recent-comment-widget">
-        <h3 class="title-widget">Recent Comments</h3>
+      <div class="widget widget-post">
+        <h3 class="title-widget">Komentar Terakhir</h3>
         <?
         $args = array(
           'status' => 'approve',
@@ -33,11 +33,13 @@
         $comments = get_comments($args);
         foreach($comments as $comment){
         ?>
+        <div class="content-widget">
           <div class="each-comment-widget">
             <span class="author-comment-widget"> <? echo $comment->comment_author; ?> </span>
             <span class="content-comment-widget">mengatakan "<? echo wp_html_excerpt( $comment->comment_content, 40 ); ?>..." di</span>
             <span class="post-comment-widget"><a href="<? echo get_the_permalink($comment->comment_post_ID); ?>"><? echo get_the_title($comment->comment_post_ID); ?></a></span>
           </div>
+        </div>
         <?
         }
         ?>

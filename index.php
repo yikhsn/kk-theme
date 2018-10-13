@@ -3,7 +3,7 @@
 <div class="body-cody">
 		<div class="row no-gutters">
 			<main class="col-lg-9 col-sm-12 col-12">
-				<div class="body-content">
+				<article class="body-content">
 					<?
 					if ( have_posts() ) {
 						while( have_posts()) {
@@ -11,7 +11,7 @@
 							get_template_part('content');
 						}
 					?>
-				</div>
+				</article>
 				<div id="pagination-blog">	
 				<?
 					if ( function_exists('wp_bootstrap_pagination') )

@@ -21,7 +21,7 @@
     //front-end display of widget
     public function widget( $args, $instace) {
     ?>
-      <div id="sidebar-ads">
+      <div class="widget-ads">
       <?php
         $googleadsensecode = '
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>

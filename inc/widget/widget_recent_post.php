@@ -21,8 +21,8 @@
     //front-end display of widget
     public function widget( $args, $instace) {
       ?>
-      <div id="widget-recent-post">
-        <h3 class="title-widget">Recent Post</h3>
+      <div class="widget widget-post widget-recent-post">
+        <h3 class="title-widget">Postingan Terbaru</h3>
         <?
           $args = array(  'numberposts'         => '6',
                           'post_type'           => 'post',
@@ -32,10 +32,11 @@
           $recent_posts = wp_get_recent_posts( $args );
           foreach( $recent_posts as $recent ){
         ?>
-          <div class="container single-widget-recent-post">
+        <div class="content-widget">
+          <div class="single-widget-post">
             <div class="row no-gutters">
               <div class="col-4 col-sm-4">
-                <div class="widget-recent-post-thumbnails">
+                <div class="single-widget-post-thumbnails">
                   <a href="<? the_permalink(); ?>">
                   <?
                     echo get_the_post_thumbnail($recent["ID"]);
@@ -44,22 +45,13 @@
                 </div>
               </div>
               <div class="col-8 col-sm-8">
-                <div class="widget-recent-post-content">
-                  <div class="widget-recent-post-category">
-                    <?php
-                    $category_detail = get_the_category($recent["ID"]);
-                    $firstCategory = $category_detail[0]->cat_name;
-                    $linkFirstCategory = get_category_link($category_detail[0]->cat_ID);
-                    ?>
-                    <a href="<? echo esc_url($linkFirstCategory); ?>">
-                      <span> <? echo $firstCategory; ?></span>
-                    </a>
-                  </div>
-                  <h4 class="widget-recent-title-post"><a href="<? echo get_permalink($recent["ID"]); ?>"> <? echo $recent["post_title"]; ?></a></h4>
+                <div class="single-widget-post-content">
+                  <h4 class="single-widget-post-title"><a href="<? echo get_permalink($recent["ID"]); ?>"> <? echo $recent["post_title"]; ?></a></h4>
                 </div>  
               </div>
             </div>
           </div>
+        </div>
         <?
         }
         ?>

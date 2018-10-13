@@ -1,4 +1,4 @@
-<div class="single-posts">
+<section class="single-posts">
   <div class="row no-gutters">
     <div class="col-5 col-md-5">
       <div class="post-thumbnail">
@@ -44,4 +44,4 @@
       </div>  
     </div>
   </div>
-</div>
+</section>

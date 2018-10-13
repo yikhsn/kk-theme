@@ -21,40 +21,31 @@
     //front-end display of widget
     public function widget( $args, $instace) {
     ?>
-      <div id="widget-recent-post">
-        <h3 class="title-widget">Popular Post</h3>
+      <div class="widget widget-post widget-popular-post">
+        <h3 class="title-widget">Postingan Populer</h3>
     <?
        query_posts('meta_key=post_views_count&orderby=meta_value_num&order=DESC&posts_per_page=7');
        if (have_posts()){
         while (have_posts()){
           the_post();
           ?>
-          <div class="container single-widget-recent-post">
-          <div class="row no-gutters">
-            <div class="col-4 col-sm-4">
-              <div class="widget-recent-post-thumbnails">
-                <a href="<? the_permalink(); ?>">
+        <div class="content-widget">
+          <div class="single-widget-post">
+            <div class="row no-gutters">
+              <div class="col-4 col-sm-4">
+                <div class="single-widget-post-thumbnails">
+                  <a href="<? the_permalink(); ?>">
                   <?
                     the_post_thumbnail();
                   ?>
-                </a>
-              </div>
-            </div>
-            <div class="col-8 col-sm-8">
-              <div class="widget-recent-post-content">
-                <div class="widget-recent-post-category">
-                  <?php
-                    $category = get_the_category();
-                    $firstCategory = $category[0]->cat_name;
-                    $linkFirstCategory = get_category_link($category[0]->cat_ID);
-
-                    ?>
-                    <a href="<? echo esc_url($linkFirstCategory); ?>">
-                      <span> <? echo $firstCategory; ?></span>
-                    </a>
+                  </a>
                 </div>
-                <h4 class="widget-recent-title-post"><a href="<? the_permalink(); ?>"> <? the_title(); ?></a></h4>
-              </div>  
+              </div>
+              <div class="col-8 col-sm-8">
+                <div class="single-widget-post-content">
+                  <h4 class="single-widget-post-title"><a href="<? the_permalink(); ?>"> <? the_title(); ?></a></h4>
+                </div>  
+              </div>
             </div>
           </div>
         </div>

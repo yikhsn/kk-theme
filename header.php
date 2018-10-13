@@ -63,16 +63,13 @@
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav mr-3">
 							<li class="nav-item">
-								<a class="nav-link mr-2 cody-menu" href="">Artikel</a>
+								<a class="nav-link cody-menu" href="">Insight</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link mr-2 cody-menu" href="">Software</a>
+								<a class="nav-link cody-menu" href="">Tutorial</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link mr-2 cody-menu" href="">Tutorial</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link mr-2 cody-menu" href="">Server</a>
+								<a class="nav-link cody-menu" href="">Kelas</a>
 							</li>
 						</ul>
 					</div>

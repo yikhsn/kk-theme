@@ -21,22 +21,31 @@
     //front-end display of widget
     public function widget( $args, $instace) {
     ?>
-      <div id="widget-subscribe">
-        <h3 class="title-widget-subscribe">Subscribe!</h3>
+      <div class="widget widget-subscribe">
         <div class="row no-gutters">
-        <form action="https://sudoway.us18.list-manage.com/subscribe/post?u=02406f95f07144179e23cf6e3&amp;id=f72ceb2fc9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>   
-          <p class="subscribe-widget-message">Dapatkan rangkuman kabar mingguan dikirim langsung ke email kamu!</p>
-          <div class="form-group">
-            <input type="email" value="" placeholder="Masukkan email" name="EMAIL" class="form-control" id="email">
+          <div class="widget-subscribe-header">
+            <div class="widget-subscribe-icon">
+              <img src="<?= get_template_directory_uri(); ?>/img/main/email.svg" alt="Subscribe Icon">
+            </div>
+            <h4 class="widget-subscribe-title">Jadi paling update, Dev!</h4>
+            <p class="subscribe-widget-desc">Dapatkan rangkuman kabar mingguan dikirim langsung ke email kamu!</p>
           </div>
-          <div id="mce-responses">
-            <div class="response" id="mce-error-response" style="display:none"></div>
-            <div class="response" id="mce-success-response" style="display:none"></div>
-          </div>                
-          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_02406f95f07144179e23cf6e3_f72ceb2fc9" tabindex="-1" value=""></div>
-          <div class="row no-gutters justify-content-center">          
-          <button class="btn btn-sm button-subs" type="submit" name="subscribe" id="mc-embedded-subscribe" class="button">Subscribe</button>                            
-          </div>          
+          <div class="widget-subscribe-body">
+
+            <form action="https://sudoway.us18.list-manage.com/subscribe/post?u=02406f95f07144179e23cf6e3&amp;id=f72ceb2fc9"
+                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" 
+                novalidate
+            >   
+              <div class="widget-subscribe-form">
+                <input type="email" value="" placeholder="Masukkan email" name="EMAIL" class="widget-subscribe-input" id="email">
+                <input class="widget-subscribe-button" type="submit" name="subscribe" id="mc-embedded-subscribe" value="Submit">
+
+              </div>
+              <div id="mce-responses">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>                
+            </div>
         </form>
         </div>
 

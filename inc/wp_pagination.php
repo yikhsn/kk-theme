@@ -55,7 +55,7 @@ function wp_bootstrap_pagination( $args = array() ) {
     if ( !empty($min) && !empty($max) ) {
         for( $i = $min; $i <= $max; $i++ ) {
             if ($page == $i) {
-                $echo .= '<li class="page-item active-sudoway"><span class="page-link active-sudoway">' . str_pad( (int)$i, 2, '0', STR_PAD_LEFT ) . '</span></li>';
+                $echo .= '<li class="page-item page-item-active"><span class="page-link page-link-active">' . str_pad( (int)$i, 2, '0', STR_PAD_LEFT ) . '</span></li>';
             } else {
                 $echo .= sprintf( '<li class="page-item"><a class="page-link" href="%s">%002d</a></li>', esc_attr( get_pagenum_link($i) ), $i );
             }

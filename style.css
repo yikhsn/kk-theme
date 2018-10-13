@@ -76,7 +76,7 @@ nav {
 #main-navbar {
   height: 60px;
   padding: 5px 50px 5px 100px;
-  background: #fff;
+  background: #ffffff;
   border-bottom: 1px solid var(--main-bg-color);
 }
 
@@ -90,20 +90,29 @@ nav {
 }
 
 .nav-item {
-  padding: 5px;
+  margin-right: 20px;
 }
 
 .nav-item:first-child{
   margin-left: 30px;
 }
 
+.nav-item:last-child{
+  margin-right: 0;
+}
+
 .cody-menu {
   color: var(--light-secondary-color);
   font-size: 14px;
-  margin-right: 10px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 0.5s ease;
 }
 
-.cody-menu:hover {
+.cody-menu:hover,
+.cody-menu:focus {
+  background: var(--main-bg-color);
   color: var(--main-secondary-color);
 }
 
@@ -116,6 +125,11 @@ nav {
   color: var(--light-secondary-color);
   background: transparent;
   border-bottom: 1px solid var(--light-primary-color);
+}
+
+.cody-input-search:hover,
+.cody-input-search:focus {
+  border-bottom: 1px solid var(--bold-primary-color);
 }
 
 .cody-input-search::placeholder {
@@ -139,12 +153,13 @@ nav {
 /*=======================================================================*/
 
 .body-cody {
-  margin: 20px 75px 30px 75px;
+  margin: 20px 75px 20px 75px;
 }
 
 .body-content {
   margin-right: 40px;
-  margin-left: 10px; 
+  margin-left: 10px;
+  margin-bottom: 40px;
 }
 
 
@@ -244,20 +259,208 @@ nav {
   color: var(--light-secondary-color);
 }
 
-/*========================= STYLE FOR PAGE CONTENT ========================*/
+/*============================= STYLE FOR WIDGET ==========================*/
 /*=========================================================================*/
+
+/*======================= STYLE FOR UNIVERSAL WIDGET ======================*/
+
+.widget {
+  margin-bottom: 20px;
+}
+
+.widget:last-child{
+  margin-bottom: 0;
+}
+
+.title-widget {
+  font-size: 18px;
+  font-family: 'PT Serif', serif;
+  color: var(--bold-dark-color);
+  padding-left: 10px;
+  margin-bottom: 15px;
+  border-left: 4px solid var(--main-primary-color);
+}
+
+.content-widget {
+  padding: 5px;
+}
+
+/*======================= STYLE FOR SUBS WIDGET ======================*/
+
+.widget-subscribe {
+  background: var(--main-bg-color);
+  padding: 20px;
+}
+
+.widget-subscribe-header{
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.widget-subscribe-body {
+  display: block;
+}
+
+.widget-subscribe-icon {
+  text-align: center;
+  
+}
+
+.widget-subscribe-icon img {
+  display: block;
+  width: 80px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.widget-subscribe-title {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 15px;
+  color: var(--main-secondary-color);
+  font-family: 'PT Serif', serif;
+}
+
+.subscribe-widget-desc {
+  font-size: 12px;
+  color: var(--light-secondary-color);
+}
+
+.widget-subscribe-form{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.widget-subscribe-input {
+  border: 1px solid var(--dark-bg-color);
+  vertical-align: middle;
+  color: var(--light-secondary-color);
+  width: 75%;
+  padding: 10px;
+  height: 35px;
+  margin: 0;
+}
+
+.widget-subscribe-input::placeholder {
+  font-size: 12px;
+}
+
+.widget-subscribe-input:hover,
+.widget-subscribe-input:focus {
+  border: 1px solid var(--main-primary-color);
+}
+
+.widget-subscribe-button {
+  border: 1px solid var(--dark-primary-color);
+  background-color: var(--dark-primary-color);
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+  width: 25%;
+  height: 35px;
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+}
+
+.widget-subscribe-button:hover {
+  background-color: var(--bold-primary-color);
+  border: 1px solid var(--bold-primary-color);
+}
+
+#mce-error-response {
+  font-size: 12px;
+  color: var(--main-secondary-color);
+  text-align: center;
+}
+
+#mce-success-response {
+  font-size: 12px;
+  color: var(--light-secondary-color);
+  text-align: center;
+  padding: 5px;
+}
+
+/*======================= STYLE FOR ADS WIDGET ======================*/
+
+.widget-ads {
+  padding: 0;
+  text-align: center;
+}
+
+/*======================= STYLE FOR POST WIDGET ======================*/
+
+.widget-post {
+  background: var(--main-bg-color);
+  padding: 20px;
+}
+
+
+.single-widget-post {
+  margin-bottom: 10px;
+}
+
+.single-widget-post:last-child {
+  margin-bottom: 0;
+}
+
+.single-widget-post-thumbnails {
+  margin-right: 10px;
+}
+
+.single-widget-post-thumbnails img {
+  width: 100%;
+  height: auto;
+}
+
+.single-widget-post-title {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.single-widget-post-title a{
+  color: var(--bold-secondary-color);
+  transition: all 0.2s ease-out;
+}
+
+.single-widget-post-title a:hover{
+  color: var(--dark-primary-color);
+}
+
+/*======================= STYLE FOR COMMENT WIDGET ======================*/
+
+.each-comment-widget {
+  margin-bottom: 5px;
+}
+
+.author-comment-widget,
+.content-comment-widget {
+  line-height: 1;
+  font-size: 12px;
+  color: var(--main-secondary-color) 
+}
+
+.post-comment-widget {
+  font-size: 12px;
+  line-height: 1;
+}
+
+.post-comment-widget a {
+
+}
 
 
 /*========================== STYLE FOR SINGLE PAGE ========================*/
 /*=========================================================================*/
 
-
-/*========================== STYLE FOR SINGLE CONTENT =====================*/
-
 .single-page {
   margin-right: 70px; 
   font-size: 25px;
 }
+
+/*========================== STYLE FOR SINGLE CONTENT =====================*/
 
 .title-single-page {
   font-size: 150%;
@@ -378,8 +581,7 @@ nav {
   transition: background 0.5s ease-in;
 }
 
-.single-tags-post:hover,
-.single-tags-post:visited {
+.single-tags-post:hover {
   background: var(--dark-primary-color);
 }
 
@@ -455,15 +657,10 @@ nav {
   transition: all 0.5s ease-out;
 }
 
-.author-social:hover, .author-social:visited {
+.author-social:hover {
   background-color: #fff;
   border: 1px solid var(--main-secondary-color);
   opacity: 0.8; 
-}
-
-.author-social path {
-  fill: red;
-  background-color: red;
 }
 
 /*===================== STYLE FOR SINGLE COMMENTS SYSTEM ==================*/
@@ -476,10 +673,6 @@ nav {
   list-style: none;
   text-decoration: none;
 }
-
-/* .comment {
-
-} */
 
 .comments-title {
   color: var(--dark-secondary-color);
@@ -570,8 +763,7 @@ nav {
   margin-left: 40px;
 }
 
-
-/**** COMMENTS FORM ****/
+/*========================= STYLE FOR COMMENTS FORM ========================*/
 
 .comment-form .logged-in-as {
   color: var(--main-secondary-color);
@@ -595,6 +787,35 @@ nav {
   font-size: 50%;
 }
 
+/*========================= STYLE FOR PAGINATION ==========================*/
+/*=========================================================================*/
+
+.pagination .page-item {
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+.pagination .page-item-active {
+  background: var(--main-primary-color);
+  color: var(--main-primary-color);
+}
+
+.pagination .page-item-active:hover,
+.pagination .page-item-active:focus {
+  background: #26bb64;
+}
+
+.pagination .page-item .page-link {
+  color: var(--main-primary-color);
+  border-radius: 5px;
+}
+
+.pagination .page-item .page-link-active {
+  color: #ffffff;
+  background: var(--main-primary-color);
+  border: 1px solid var(--main-primary-color);
+}
+
 /*=========================== STYLE FOR FOOTER ============================*/
 /*=========================================================================*/
 
@@ -609,8 +830,6 @@ nav {
   color: var(--bright-secondary-color);
   font-size: 16px;
 }
-
-
 
 /*================== WORDPRESS SPECIFIC SELECTOR STYLE ====================*/
 /*=========================================================================*/

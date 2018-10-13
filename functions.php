@@ -1,4 +1,8 @@
 <?php
+
+    /**
+     * Function to add and load CSS and JS assets file
+     */
     function theme_style() {
         wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() . '/assets/css/bootstrap.css' );
         wp_enqueue_style( 'highlight_css', get_template_directory_uri() . '/assets/css//assets/js/highlight.pack.css' );
@@ -20,6 +24,10 @@
     
     add_action( 'wp_enqueue_scripts', 'theme_js');
 
+
+    /**
+     * 
+     */
     add_filter('the_content', function( $content ){
         //--Remove all inline styles--
         $content = preg_replace('/ style=("|\')(.*?)("|\')/','',$content);
@@ -30,6 +38,10 @@
         return 15;
     }
 
+    
+    /**
+     * Function to replace read more text on excerpt
+     */
     function return_excerpt_text( $more ) {
         return "";
     }
@@ -172,6 +184,9 @@
 		return $content;
     }
 
+    /**
+     * Funtion to create author social media
+     */
     add_filter( 'user_contactmethods','wpse_user_contactmethods', 10, 1 );
     
     function wpse_user_contactmethods( $contact_methods ) {
@@ -187,24 +202,25 @@
     }
 
     /**
-     * CALL A COMMENT SYSTEM FUNCTION FILE
+     * Call a moment system function
      */
     require get_template_directory() . '/inc/main/comment_system.php';
 
 
     /** 
-     * Call Modular Widget Function
+     * Call a modular widget function
      * */
     require get_template_directory() . '/inc/widget/widget_recent_post.php';
     require get_template_directory() . '/inc/widget/widget_popular_post.php';
     require get_template_directory() . '/inc/widget/widget_recent_comment.php';
-    require get_template_directory() . '/inc/widget/widget_similar_post.php';
     require get_template_directory() . '/inc/widget/sidebar_related_post.php';  
     require get_template_directory() . '/inc/widget/sidebar_ads_300.php';
     require get_template_directory() . '/inc/widget/sidebar_ads_600.php';
     require get_template_directory() . '/inc/widget/widget_subscribe.php';
 
-
+    /** 
+     * Call a modular pagination function
+     * */
     require get_template_directory() . '/inc/wp_pagination.php';
 
 ?>
