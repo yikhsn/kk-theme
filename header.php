@@ -49,8 +49,8 @@
 		<? wp_head(); ?>
 
 		<header>
-			<nav id="main-navbar" class="navbar navbar-expand-lg navbar-light">
-					<a class="navbar-brand cody-title" href=" <? echo home_url(); ?>">
+			<nav id="navbar-cody" class="navbar navbar-expand-lg navbar-light bg-light">
+					<a class="navbar-brand navbar-cody-name" href=" <? echo home_url(); ?>">
 						<? bloginfo('name'); ?>
 					</a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" 
@@ -61,22 +61,19 @@
 					</button>
 
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav mr-auto">
+						<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 							<li class="nav-item">
-								<a class="nav-link cody-menu" href="">Insight</a>
+								<a class="nav-link" href="">Insight</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link cody-menu" href="">Tutorial</a>
+								<a class="nav-link" href="">Tutorial</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link cody-menu" href="">Kelas</a>
+								<a class="nav-link" href="">Kelas</a>
 							</li>
 						</ul>
-
 						<? get_search_form(); ?>
-
 					</div>
-
 			</nav>				
 		</header>
 	</head>

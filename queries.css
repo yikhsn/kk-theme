@@ -18,6 +18,13 @@
   /* 
   * Style for content in index
   */
+
+  #navbar-cody {
+    padding-left: 40px;
+    padding-right: 40px;
+    border-bottom: 1px solid var(--dark-bg-color);
+  }
+  
   .body-cody { margin: 20px 30px 20px 30px; }
 
   .body-content { margin-right: 15px; }
@@ -73,9 +80,6 @@
 
   .footer-blog {
     text-align: center;
-  }
-
-  .author-post-avatar {
   }
 }
 
