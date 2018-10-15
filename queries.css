@@ -5,7 +5,7 @@
 
 /* 
 * CSS style for big tablets (width smaller that the 1140px row) 
-*/
+*/  
 @media ( max-width: 1200px ) {
 
 }
@@ -23,7 +23,7 @@
   .body-content { margin-right: 15px; }
 
   .title-post {
-    font-size: 95%;
+    font-size: 85%;
     margin-bottom: 10px;
   }
 
@@ -62,6 +62,21 @@
   .title-post {
     font-size: 85%;
   }
+
+  .single-page {
+    margin-right: 0;
+  }
+
+  .sidebar-blog {
+    margin-top: 20px;
+  }
+
+  .footer-blog {
+    text-align: center;
+  }
+
+  .author-post-avatar {
+  }
 }
 
 /* 
@@ -91,5 +106,25 @@
 
   .widget {
     margin-bottom: 10px;
+  }
+
+  .single-page-author-post{
+    padding: 20px 10px;
+  }
+
+  .author-social {
+    padding: 1px 4px 3px 4px;
+    width: 25px;
+  }
+
+  .title-single-page {
+    font-size: 100%;
+  }
+
+  .paragraph-single-page {
+    padding: 0 10px 0 10px;
+    margin-bottom: 10px;
+    word-spacing: 1px;
+    line-height: 1.8;
   }
 }

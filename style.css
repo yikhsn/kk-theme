@@ -74,8 +74,6 @@ nav {
 
 #main-navbar {
   height: 60px;
-  padding: 5px 50px 5px 100px;
-  background: #ffffff;
   border-bottom: 1px solid var(--main-bg-color);
 }
 
@@ -441,13 +439,11 @@ nav {
   font-size: 25px;
 }
 
-/*========================== STYLE FOR SINGLE CONTENT =====================*/
+/*========================== STYLE FOR SINGLE PAGE =======================*/
 
 .title-single-page {
   font-size: 150%;
   font-weight: 600;
-  /* padding-left: 30px;
-  padding-right: 30px;  */
   margin-bottom: 20px;
   color: var(--dark-secondary-color);
   font-family: 'PT Serif', serif;
@@ -576,7 +572,6 @@ nav {
 
 .author-post-avatar {
   text-align: center;
-  padding-top: 10px;
 }
 
 .author-post-avatar .avatar {
@@ -629,6 +624,7 @@ nav {
   justify-items: center;
   display: inline-block;
   margin-right: 5px;
+  margin-bottom: 5px;
   width: 30px;
   height: auto;
   opacity: 0.5;

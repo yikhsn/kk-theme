@@ -94,7 +94,7 @@
 									<div class="col-12">
 										<div class="single-page-author-post">
 											<div class="row no-gutters">
-												<div class="col-4 col-md-2">
+												<div class="col-4 col-sm-2">
 													<div class="author-post-avatar">
 														<?
 															echo get_avatar(get_the_author_meta('ID'), '150');
@@ -102,23 +102,12 @@
 													</div>	
 												</div>
 
-												<div class="col-8 col-md-10">
+												<div class="col-8 col-sm-10">
 													<div class="author-post-meta">
 														<div class="author-post-name">
 															<?
 																the_author_posts_link();
 															?>
-														</div>
-														<div class="author-post-link">
-															<? if ( get_the_author_meta('user_url') ) { ?>
-																<a href="<? the_author_meta('user_url'); ?>">
-																	(
-																	<?
-																		echo str_replace('http://', '', get_the_author_meta('user_url'));
-																	?>
-																	)
-																</a>
-															<? } ?>
 														</div>
 														<div class="author-post-desc">
 															<?
