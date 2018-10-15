@@ -9,6 +9,7 @@
         wp_enqueue_style( 'Lato', 'https://fonts.googleapis.com/css?family=Lato' );
         wp_enqueue_style( 'PT Serif', 'https://fonts.googleapis.com/css?family=PT+Serif' );
         wp_enqueue_style('style', get_stylesheet_uri() );
+        wp_enqueue_style( 'queries', get_template_directory_uri() . '/queries.css' );
     }
 
     add_action('wp_enqueue_scripts', 'theme_style');

@@ -61,7 +61,7 @@
 					</button>
 
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav mr-3">
+						<ul class="navbar-nav mr-auto">
 							<li class="nav-item">
 								<a class="nav-link cody-menu" href="">Insight</a>
 							</li>
@@ -72,10 +72,9 @@
 								<a class="nav-link cody-menu" href="">Kelas</a>
 							</li>
 						</ul>
-					</div>
 
-					<div class="search-submit cody-search">
 						<? get_search_form(); ?>
+
 					</div>
 
 			</nav>				

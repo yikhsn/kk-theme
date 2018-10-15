@@ -42,7 +42,6 @@
 /*========================= RESET CSS & BOOTSTRAP =========================*/
 /*=========================================================================*/
 
-
 * {
   padding: 0;
   margin: 0;
@@ -169,7 +168,6 @@ nav {
 .single-posts {
   font-size: 20px;
   margin-bottom: 30px;
-  /* background: blue; */
 }
 
 .single-posts:last-child {
@@ -178,38 +176,21 @@ nav {
 
 .post-thumbnail {
   margin-right: 10px;
-  height: 200px;
-  width: 350px;
-  overflow: hidden;
 }
 
 .image-thumbnail {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #464e4f;
-  opacity: 0.5;
+  width: 100%;
+  height: 200px;  
 }
 
-/* .image-thumbnail-overlay {
-  position: relative;
-}
-
-.image-thumbnail-overlay::after{
-  position: absolute;
+.image-thumbnail img {
+  object-fit: cover;
   width: 100%;
   height: 100%;
-  opacity: 0;
 }
 
-.image-thumbnail-overlay::hover::after {
-  opacity: .5;
-  background-color: red;
-} */
-
 .post-content {
-  padding: 5px;
-  /* margin-left: 5px; */
+  /* padding: 5px; */
 }
 
 .title-post {
@@ -836,5 +817,4 @@ nav {
 
 img.attachment-medium {
   height: 200px;
-  width: 350px;
 }

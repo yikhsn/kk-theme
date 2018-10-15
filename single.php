@@ -4,7 +4,7 @@
 ?>
 	<div class="body-cody">
 		<div class="row no-gutters">
-			<main class="col-lg-9 col-sm-12 col-12">
+			<main class="col-lg-9 col-md-8 col-sm-12 col-12">
 				<article class="single-page">
 					<div class="row no-gutters">
 						<?
@@ -217,7 +217,7 @@
 					</div>	
 				</article>
 			</main>
-			<aside class="col-lg-3 col-sm-12 col-12">
+			<aside class="col-lg-3 col-md-4 col-sm-12 col-12">
 				<div class="sidebar-blog">
 					<?php dynamic_sidebar('sidebar1'); ?>				
 				</div>

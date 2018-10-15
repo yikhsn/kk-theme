@@ -1,0 +1,95 @@
+
+/*=========================================================================*/
+/*================== WORDPRESS SPECIFIC SELECTOR STYLE ====================*/
+/*=========================================================================*/
+
+/* 
+* CSS style for big tablets (width smaller that the 1140px row) 
+*/
+@media ( max-width: 1200px ) {
+
+}
+
+/* 
+* CSS style for tablet to big tables : 768x - 1023px 
+*/
+@media ( max-width: 1023px ) {
+  
+  /* 
+  * Style for content in index
+  */
+  .body-cody { margin: 20px 30px 20px 30px; }
+
+  .body-content { margin-right: 15px; }
+
+  .title-post {
+    font-size: 95%;
+    margin-bottom: 10px;
+  }
+
+  .desc-post {
+    font-size: 60%;
+    margin-bottom: 10px;
+  }
+
+  .image-thumbnail {
+    height: 150px;  
+  }
+
+  .single-posts {
+    margin-bottom: 20px;
+  }
+
+  /*
+  * Style single post
+  */
+
+  .single-page {
+    margin-right: 30px;
+  }
+
+  .title-single-page {
+    font-size: 120%;
+  }
+
+}
+
+
+/* 
+* CSS style for phones to small tables : 480px - 767px 
+*/
+@media ( max-width: 767px ) {
+  .title-post {
+    font-size: 85%;
+  }
+}
+
+/* 
+* CSS style for small phones : 0px - 480px 
+*/
+@media ( max-width: 480px ) {
+  
+  .body-cody { margin: 10px; }
+
+  #main-navbar { margin-bottom: 20px }
+
+  .title-post {
+    font-size: 70%;
+  }
+
+  .desc-post {
+    display: none;
+  }
+
+  .meta-post {
+    font-size: 50%;
+  }
+
+  .image-thumbnail {
+    height: 90px;
+  }
+
+  .widget {
+    margin-bottom: 10px;
+  }
+}
