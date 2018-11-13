@@ -49,7 +49,7 @@
 		<? wp_head(); ?>
 
 		<header>
-			<nav id="navbar-cody" class="navbar navbar-expand-lg navbar-light bg-light">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-cody">
 					<a class="navbar-brand navbar-cody-name" href=" <? echo home_url(); ?>">
 						<? bloginfo('name'); ?>
 					</a>
@@ -78,3 +78,4 @@
 		</header>
 	</head>
 	<body>
+	<div class="body-cody-container">

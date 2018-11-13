@@ -27,7 +27,7 @@
             <div class="widget-subscribe-icon">
               <img src="<?= get_template_directory_uri(); ?>/img/main/email.svg" alt="Subscribe Icon">
             </div>
-            <h4 class="widget-subscribe-title">Jadi paling update, Dev!</h4>
+            <h4 class="widget-subscribe-title">Jadi paling update!</h4>
             <p class="subscribe-widget-desc">Dapatkan rangkuman kabar mingguan dikirim langsung ke email kamu!</p>
           </div>
           <div class="widget-subscribe-body">

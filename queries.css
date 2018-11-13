@@ -6,9 +6,6 @@
 /* 
 * CSS style for big tablets (width smaller that the 1140px row) 
 */  
-@media ( max-width: 1200px ) {
-
-}
 
 /* 
 * CSS style for tablet to big tables : 768x - 1023px 
@@ -19,7 +16,7 @@
   * Style for content in index
   */
 
-  #navbar-cody {
+  .navbar-cody {
     padding-left: 40px;
     padding-right: 40px;
     border-bottom: 1px solid var(--dark-bg-color);
@@ -90,7 +87,7 @@
   
   .body-cody { margin: 10px; }
 
-  #main-navbar { margin-bottom: 20px }
+  .navbar-cody { margin-bottom: 20px }
 
   .title-post {
     font-size: 70%;
